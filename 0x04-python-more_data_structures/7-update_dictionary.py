@@ -7,6 +7,5 @@ def update_dictionary(a_dictionary, key, value):
         else:
             create[key] = value
     a_dictionary.update(create.items())
-    sorted_dict = dict(sorted(a_dictionary.items()))
-    for i, j in sorted_dict.items():
+    for i, j in a_dictionary.items():
         print("{}: {}".format(i, j))
