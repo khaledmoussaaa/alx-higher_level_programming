@@ -68,4 +68,5 @@ class Rectangle:
         return ("".join(matrix))
     
     def __repr__(self):
+        """Return the string representation of the Rectangle."""
         return f"Rectangle({self.__width}, {self.__height})"
