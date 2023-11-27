@@ -59,14 +59,13 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ("")
 
-        matrix = list()
+        rect = []
         for i in range(self.__height):
-            for j in range(self.__width):
-                matrix.append("#")
+            [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
-                matrix.append("\n")
-        return ("".join(matrix))
-    
+                rect.append("\n")
+        return ("".join(rect))
+
     def __repr__(self):
         """Return the string representation of the Rectangle."""
         return f"Rectangle({self.__width}, {self.__height})"
