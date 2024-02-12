@@ -1,14 +1,16 @@
 #!/usr/bin/node
-const myFunctions = {};
+// 101-call_me_moby.js
 
-myFunctions.executeXTimes = function(x, theFunction) {
+// Define an object with a method named callMeMoby
+const callMeMoby = {};
+
+// Add a method to the object to call the provided function x times
+callMeMoby.callMeMoby = function(x, theFunction) {
     for (let i = 0; i < x; i++) {
         theFunction();
     }
 };
 
-function myFunction() {
-    console.log("Executing myFunction");
-}
+// Export the object containing the callMeMoby method
+module.exports = callMeMoby;
 
-myFunctions.executeXTimes(5, myFunction);
